@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nos web | Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>
+            <span class="highlight">N</span>O<span class="highlight">S</span>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li >
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">Sobre</a>
+          </li>
+          <li class="current">
+            <a href="services.html">Serviços</a>
+          </li>
+          <li>
+              <a href="insta.html">Instagram</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="newsletter1">
+    <div class="container">
+      <h1>Soluções para Empresários e PMEs que querem um negócio…</h1>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">Serviços</h1>
+        <ul id="services">
+          <li>
+            <h3>Chave na mão</h3>
+            <p>Com pacotes à medida do seu negócio</p>
+            <p>Preço: desde €40 - €65 por mes </p>
+          </li>
+          <li>
+            <h3>Em movimento</h3>
+            <p>Para comunicar em qualquer local e a todo o momento</p>
+            <p>Preço: desde €20 - €45 por mes </p>
+          </li>
+          <li>
+            <h3>Sempre ligado</h3>
+            <p>Com ligações seguras, rápidas e de qualidade</p>
+            <p>Preço: desde €20 - €30 por mes</p>
+          </li>
+          <li>
+            <h3>Sempre em contacto</h3>
+            <p>Ligado a clientes e fornecedores através de comunicações flexíveis</p>
+            <p>Preço: desde €9,4 - €460 por mes</p>
+          </li>
+        </ul>
+
+      </article>
+      <br>
+      <br>
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>Envie-nos uma opinião</h3>
+          <form class="quote">
+            <div>
+              <label>Nome</label>
+              <br>
+              <input type="text" placeholder="Digite o seu nome">
+            </div>
+            <div>
+              <label>Email</label>
+              <br>
+              <input type="email" placeholder=" Digite o seu email">
+            </div>
+            <div>
+              <label>Mensagem</label>
+              <br>
+              <textarea placeholder="Digite a sua messagem"></textarea>
+            </div>
+            <br>
+            <button class="button_1" type="submit">Enviar</button>
+          </form>
+        </div>
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  
+                return i;
+            }
+            </script>
+            <!-- relogio fim -->
+            <body onload="startTime()">
+                
+                <div class="newsletter2" id="txt"></div>
+                
+                </body>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <p>NOS, todos os direitos reservados &copy;</p>
+  </footer>
+</body>
+
+</html>

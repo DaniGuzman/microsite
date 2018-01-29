@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nos web | Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>
+            <span class="highlight">N</span>O<span class="highlight">S</span>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="current">
+            <a href="about.html">Sobre</a>
+          </li>
+          <li>
+            <a href="services.html">Serviços</a>
+          </li>
+          <li>
+              <a href="insta.html">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="dam">
+      <img src="./esta2.png" id="showcase">
+    </section>
+
+  <section id="main">
+    <div class="container">
+      <!-- relogio -->
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+            </script>
+            <!-- relogio fim -->
+            <body onload="startTime()">
+                
+                <div class="newsletter2" id="txt"></div>
+                
+                </body>
+      <article id="main-col">
+        <h1 class="page-title">
+           <p id="sobre"> SOBRE <span class="col">N</span>O<span class="col">S</span></h1></p>
+           <button class="button" style="vertical-align:middle" onclick="myFunction()"><span>NOS</span></button>
+           <!-- botão -->
+           <script>
+            function myFunction() {
+                document.getElementById("sobre").innerHTML ="- Quem Somos ?";
+            }
+            </script>
+            <!-- botao fim -->
+        <p>
+          Somos o maior grupo de comunicações e entretenimento em Portugal.
+        </p>
+        
+        <p class="dark">
+          <span class="col">Juntos, somos imbatíveis -</span> Nascemos da fusão de duas das maiores empresas de comunicações do país. A ZON
+          e a Optimus. Somos hoje uma empresa ainda mais sólida, responsável e orientada para o futuro, comprometida com
+          a excelência e a satisfação dos clientes.
+          <br>
+          <span class="col">Revolucionamos as comunicações -</span>
+          Para que os nossos clientes tenham o serviço mais rápido, seguro e inovador do mercado, juntámos numa só estrutura robusta
+          e integrada todas as comunicações fixas e móveis. Tudo através das redes mais inteligentes e avançadas do país.
+        </p>
+        <p class="dark">
+          <span class="col">Somos de confiança -</span> Somos líderes na televisão por assinatura, na banda larga de última geração e na distribuição
+          e exibição de cinema. Temos mais de 4 milhões de clientes móveis, mais de 1,54 milhões de clientes de televisão,
+          1,6 milhões de clientes de telefone fixo e 1,145 milhões de clientes de internet de banda larga fixa. Estamos no
+          principal índice bolsista nacional (PSI-20). Os nossos clientes sabem que podem confiar em nós, porque têm do outro
+          lado da linha aquele que foi considerado o melhor serviço ao cliente do mundo, nos prémios Contact Center World
+          de 2014.
+          <br>
+          <span class="col">Revolucionamos as comunicações -</span>
+          Para que os nossos clientes tenham o serviço mais rápido, seguro e inovador do mercado, juntámos numa só estrutura robusta
+          e integrada todas as comunicações fixas e móveis. Tudo através das redes mais inteligentes e avançadas do país.
+        </p>
+      </article>
+      <aside id="sidebar">
+        <div class="dark">
+          <span class="col">A NOSSA HISTÓRIA</span>
+          <p>A ZON Multimédia foi um grupo empresarial que integrou o principal índice bolsista nacional, o PSI-20. Liderou
+            o mercado de pay TV em Portugal e foi o segundo maior Internet provider. À escala nacional, foi também líder
+            no mercado de exibição cinematográfica.
+            <br> As origens e desenvolvimento da ZON confundem-se com a génese e o desenvolvimento das indústrias do entretenimento
+            e das telecomunicações de massa em Portugal. A invenção do telefone no século XIX, do cinema no princípio do
+            século XX, da televisão na segunda metade do século e, mais tarde, da Internet, integram o desenvolvimento histórico
+            do grande grupo empresarial que foi a ZON.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <p> NOS, todos os direitos reservados &copy;</p> 
+  </footer>
+</body>
+
+</html>
