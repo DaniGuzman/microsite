@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width">
         <title>Nos web</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>
     </head>
         <header>
             <div class="container">
@@ -35,19 +36,40 @@
             </div>
         </header>
 <body>
-    <div class="container" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3995.200483052487!2d-16.934837146933802!3d32.64481143131039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc605fed48bfa833%3A0x7eb407758539db4e!2sLoja+NOS!5e0!3m2!1spt-PT!2spt!4v1517486494376" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div id="conta" >
+            
             
     </div>
     <div class="container" >
-            <div id="columnla" style="background-color:#bbb;">Localizaçao das nossas lojas</div>
+            <div id="columnla"> <h4>Localizaçao das nossas lojas</h4> </div>
     </div>
     <div class="container" >
-        <a class="columnlb" href=""  style="background-color:#ccc;">Rua dos Estados Unidos da América, Funchal</a>
-        <a href="" id="columnl" style="background-color:#ccc;">Rua Dr Brito Câmara, 99, La Vie Funchal</a>  
-        <a href="" id="columnl" style="background-color:#ccc;">Avenida Arriaga, 42, Loja do Cidadão do Funchal, Edifício Arriaga</a>     
+        <a class="columnlb" id="rua" href=""> <li>Rua dos Estados Unidos da América, Funchal</li> <img src="./ola.png" width="100%"> </a>
+        <a class="columnlb" id="rua2" href="" > <li>Rua Dr Brito Câmara, 99, La Vie Funchal</li> <img src="./ola.png" width="100%"> </a>  
+        <a class="columnlb" id="rua3" href=""> <li>Avenida Arriaga, 42, Loja do Cidadão do Funchal, Edifício Arriaga</li> <img src="./ola.png" width="100%"> </a>     
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#conta").load("localizacao1.html");
+            $('#rua').click(function (event) {
+            event.preventDefault();
+             $("#conta").load("localizacao1.html");
+             });
+             $('#rua2').click(function (event) {
+            event.preventDefault();
+             $("#conta").load("localizacao2.html");
+             });
+             $('#rua3').click(function (event) {
+            event.preventDefault();
+             $("#conta").load("localizacao3.html");
+             });
+
+    
+        });
+    </script>
 </body>
+
 <footer>
         <p> <a class="LastItem" href="http://www.nos.pt/"> NOS</a>, todos os direitos reservados &copy;</p>
     </footer>
